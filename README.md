@@ -1,47 +1,10 @@
-```
-┌───────────────────────────────────────────────┐
-                                       _       
-     __ _  ___   ___  _ __ _ __ ___   (_) ___  
-    / _` |/ _ \ / _ \| '__| '_ ` _ \  | |/ _ \ 
-   | (_| | (_) | (_) | |  | | | | | |_| | (_) |
-    \__, |\___/ \___/|_|  |_| |_| |_(_)_|\___/ 
-    |___/                                      
-			     🌩 𝘼𝙣𝙮𝙤𝙣𝙚 𝙘𝙖𝙣 𝙙𝙚𝙫𝙚𝙡𝙤𝙥!
-└───────────────────────────────────────────────┘
-```
+# 프로젝트 명
+Todolist 만들기
 
-# goormIDE
-Welcome to goormIDE!
+# 프로젝트 소개
+React.js, 스프링 부트, AWS로 배우는 웹 개발 101 책을 참고해 리엑트, 스프링 부트, AWS의 개요를 이해하는 것을 목표로 하고 있습니다.
 
-goormIDE is a powerful cloud IDE service to maximize productivity for developers and teams.  
-**DEVELOP WITH EXCELLENCE**  
-
-`Happy coding! The goormIDE team`
-
-
-## 🔧 Tip & Guide
-
-* Command feature
-	* You can simply run your script using the shortcut icons on the top right.
-	* Check out `PROJECT > Common/Build/Run/Test/Find Command` in the top menu.
-	
-* Get URL and Port
-	* Click `PROJECT > URL/PORT` in top menu bar.
-	* You can get default URL/Port and add URL/Port in the top menu.
-
-* Useful shortcut
-	
-| Shortcuts name     | Command (Mac) | Command (Window) |
-| ------------------ | :-----------: | :--------------: |
-| Copy in Terminal   | ⌘ + C         | Ctrl + Shift + C |
-| Paste in Terminal  | ⌘ + V         | Ctrl + Shift + V |
-| Search File        | ⌥ + ⇧ + F     | Alt + Shift + F  |
-| Terminal Toggle    | ⌥ + ⇧ + B     | Alt + Shift + B  |
-| New Terminal       | ⌥ + ⇧ + T     | Alt + Shift + T  |
-| Code Formatting    | ⌥ + ⇧ + P     | Alt + Shift + P  |
-| Show All Shortcuts | ⌘ + H         | Ctrl + H         |
-
-## 💬 Support & Documentation
-
-Visit [https://ide.goorm.io](https://ide.goorm.io) to support and learn more about using goormIDE.  
-To watch some usage guides, visit [https://help.goorm.io/en/goormide](https://help.goorm.io/en/goormide)
+# 설치 방법
+# 사용 예제
+# 개발 환경
+# 변경 사항
