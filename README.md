@@ -8,3 +8,5 @@ React.js, 스프링 부트, AWS로 배우는 웹 개발 101 책을 참고해 리
 # 사용 예제
 # 개발 환경
 # 변경 사항
+
+22.03.03 lombok test file (DemoModel.java)
