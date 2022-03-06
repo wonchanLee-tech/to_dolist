@@ -14,4 +14,5 @@ git clone https://github.com/wonchanLee-tech/to_dolist.git
 # 변경 사항
 
 22.03.03 - lombok test file (DemoModel.java)
+
 22.03.06 - Entity, Model, DTO 구현 완료 (TodoEntity.java, TodoDTO.java, ResponseDTO.java)
