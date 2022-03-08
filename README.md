@@ -18,3 +18,5 @@ git clone https://github.com/wonchanLee-tech/to_dolist.git
 22.03.06 - Entity, Model, DTO 구현 완료 (TodoEntity.java, TodoDTO.java, ResponseDTO.java)
 
 22.03.07 - TestController 구현 완료 (TestController.java)
+
+22.03.08 - TestController에서 매개변수 넘겨받는 테스트 메서드 구현 (Testcontorller.java, TestRequestBodyDTO.java)
