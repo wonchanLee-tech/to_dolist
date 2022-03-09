@@ -10,7 +10,11 @@ git clone https://github.com/wonchanLee-tech/to_dolist.git
 ```
 
 # 사용 예제
+
+
 # 개발 환경
+Ubuntu 20.04.4 LTS
+
 # 변경 사항
 
 22.03.03 - lombok test file (DemoModel.java)
@@ -20,3 +24,5 @@ git clone https://github.com/wonchanLee-tech/to_dolist.git
 22.03.07 - TestController 구현 완료 (TestController.java)
 
 22.03.08 - TestController에서 매개변수 넘겨받는 테스트 메서드 구현 (Testcontorller.java, TestRequestBodyDTO.java)
+
+22.03.09 - Service Layer 구현 완료 (TodoService.java, TodoController)
