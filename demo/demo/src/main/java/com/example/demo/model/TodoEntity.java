@@ -4,11 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import javax.persistence.Entity;
 
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Entity
 public class TodoEntity {
     private String id;  // 이 오브젝트의 id
     private String userId;  // 이 오브젝트를 생성한 사용자의 id

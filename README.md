@@ -26,3 +26,5 @@ Ubuntu 20.04.4 LTS
 22.03.08 - TestController에서 매개변수 넘겨받는 테스트 메서드 구현 (Testcontorller.java, TestRequestBodyDTO.java)
 
 22.03.09 - Service Layer 구현 완료 (TodoService.java, TodoController.java)
+
+22.03.10 - Persistence Layer - DB Table - Entity ORM 작업 중 (TodoEntity.java)
