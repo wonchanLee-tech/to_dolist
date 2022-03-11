@@ -28,3 +28,5 @@ Ubuntu 20.04.4 LTS
 22.03.09 - Service Layer 구현 완료 (TodoService.java, TodoController.java)
 
 22.03.10 - Persistence Layer - DB Table - Entity ORM 작업 중 (TodoEntity.java)
+
+22.03.11 - Persistence Later - DB Table - Entity ORM 구현 완료 (TodoRepository.java, TodoEntity.java, TodoService.java)
