@@ -29,4 +29,6 @@ Ubuntu 20.04.4 LTS
 
 22.03.10 - Persistence Layer - DB Table - Entity ORM 작업 중 (TodoEntity.java)
 
-22.03.11 - Persistence Later - DB Table - Entity ORM 구현 완료 (TodoRepository.java, TodoEntity.java, TodoService.java)
+22.03.11 - Persistence Layer - DB Table - Entity ORM 구현 완료 (TodoRepository.java, TodoEntity.java, TodoService.java)
+
+22.03.12 - Persistence Layer - DB에 쿼리를 보내는 메서드 테스트 구현 및 서비스 레이어 로깅 세팅 완료 (TodoRepository.java, TodoService.java)
