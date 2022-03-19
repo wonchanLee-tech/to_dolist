@@ -40,3 +40,5 @@ Ubuntu 20.04.4 LTS
 22.03.16 - Node.js - React 라이브러리 다운로드 완료 (test-project 디렉터리 아래)
 
 22.03.17 - material-ui 패키지 설치.
+
+22.03.19 - state, prop를 이용해 Item 매개변수를 받아 Todo item을 렌더링 테스트 작업 완료. (Todo.js, App.js)
