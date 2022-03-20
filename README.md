@@ -42,3 +42,5 @@ Ubuntu 20.04.4 LTS
 22.03.17 - material-ui 패키지 설치.
 
 22.03.19 - state, prop를 이용해 Item 매개변수를 받아 Todo item을 렌더링 테스트 작업 완료. (Todo.js, App.js)
+
+22.03.20 - material-ui로 UI 만들고 AddTodo 컴포넌트의 state.item에 inputField에 적인 문자열을 임시로 저장하는 기능 구현 완료 (AddTodo.js, App.js, Todo.js)
