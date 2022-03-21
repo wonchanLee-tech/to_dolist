@@ -7,6 +7,7 @@ class AddTodo extends React.Component{
         this.state = {
             item: {title:""}    // 사용자의 입력을 저장할 오브젝트
         };
+        this.add = props.add;   // props로 넘겨받아 onButtonClick에 사용
     }
 
     onInputChange = (e) =>{
@@ -14,6 +15,17 @@ class AddTodo extends React.Component{
         thisItem.title = e.target.value;
         this.setState({ item: thisItem});
         console.log(thisItem);
+    }
+
+    onButtonClick = () =>{
+        this.add(this.state.item);
+        this.setState({item: {title: ""}});
+    }
+
+    enterKeyEventHandler = (e) => {
+        if(e.key == 'Enter'){
+            this.onButtonClick();
+        }
     }
 
     render(){
@@ -25,10 +37,14 @@ class AddTodo extends React.Component{
                                    fullWidth
                                    onChange={this.onInputChange}
                                    value={this.state.item.title}
+                                   onKeyPress={this.enterKeyEventHandler}
                                    />
                     </Grid>
                     <Grid xs={1} md={1} item>
-                        <Button fullWidth color="secondary" variant="outlined">
+                        <Button fullWidth color="secondary" 
+                                variant="outlined"
+                                onClick={this.onButtonClick}
+                        >
                             +
                         </Button>
                     </Grid>
