@@ -46,3 +46,5 @@ Ubuntu 20.04.4 LTS
 22.03.20 - material-ui로 UI 만들고 AddTodo 컴포넌트의 state.item에 inputField에 적인 문자열을 임시로 저장하는 기능 구현 완료 (AddTodo.js, App.js, Todo.js)
 
 22.03.21 - App 컴포넌트의 items에 item을 추가하는 add 함수를 AddTodo 컴포넌트의 props로 전달해 Todo item을 추가하는 기능을 구현했습니다. (AddTodo.js, App.js)
+
+22.03.22 - App 컴포넌트의 items에 item을 삭제하는 delete 함수를 Todo.js 컴포넌트의 props로 전달해 Todo item을 삭제하는 기능을 구현했습니다. (Todo.js, App.js)
