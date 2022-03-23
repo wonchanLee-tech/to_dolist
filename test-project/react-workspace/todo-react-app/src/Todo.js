@@ -9,6 +9,7 @@ class Todo extends React.Component{
         this.state={
             item: props.item,
             key: props.key,
+            readOnly: true,
         };
         this.delete = props.delete;
     }
@@ -17,14 +18,43 @@ class Todo extends React.Component{
         this.delete(this.state.item);
     }
 
+    offReadOnlyMode = () => {
+        console.log("Event!", this.state.readOnly);
+        this.setState({readOnly: false}, () =>{
+            console.log("ReadOnly? ", this.state.readOnly);
+        });
+    }
+
+    editEventHandler = (e) => {
+        const thisItem = this.state.item;
+        thisItem.title = e.target.value;
+        this.setState({item: thisItem});
+    }
+
+    enterKeyEventHandler = (e) => {
+        if(e.key === 'Enter'){
+            this.setState({readOnly: true});
+        }
+    }
+
+    checkboxEventHandler = (e) => {
+        const thisItem = this.state.item;
+        thisItem.done = !thisItem.done;
+        this.setState({item: thisItem});
+    }
+
     render(){
         const item = this.state.item;
         return(
             <ListItem>
-                <Checkbox checked={item.done}/>
+                <Checkbox checked={item.done} onClick={this.checkboxEventHandler}/>
                 <ListItemText>
                     <InputBase 
-                        inputProps={{"aria-label": "naked"}} 
+                        inputProps={{"aria-label": "naked",
+                                      readOnly: this.state.readOnly}} 
+                        onClick={this.offReadOnlyMode}
+                        onChange={this.editEventHandler}
+                        onKeyPress={this.enterKeyEventHandler}
                         type="text"
                         id={item.id}
                         name={item.id}

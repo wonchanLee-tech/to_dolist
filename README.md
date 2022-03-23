@@ -48,3 +48,5 @@ Ubuntu 20.04.4 LTS
 22.03.21 - App 컴포넌트의 items에 item을 추가하는 add 함수를 AddTodo 컴포넌트의 props로 전달해 Todo item을 추가하는 기능을 구현했습니다. (AddTodo.js, App.js)
 
 22.03.22 - App 컴포넌트의 items에 item을 삭제하는 delete 함수를 Todo.js 컴포넌트의 props로 전달해 Todo item을 삭제하는 기능을 구현했습니다. (Todo.js, App.js)
+
+22.03.23 - ItemBase의 readOnly props를 변경하고 이벤트 핸들러 함수를 통해 Todo item을 수정하는 함수를 구현했습니다. (Todo.js)
