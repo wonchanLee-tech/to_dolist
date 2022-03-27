@@ -50,3 +50,5 @@ Ubuntu 20.04.4 LTS
 22.03.22 - App 컴포넌트의 items에 item을 삭제하는 delete 함수를 Todo.js 컴포넌트의 props로 전달해 Todo item을 삭제하는 기능을 구현했습니다. (Todo.js, App.js)
 
 22.03.23 - ItemBase의 readOnly props를 변경하고 이벤트 핸들러 함수를 통해 Todo item을 수정하는 함수를 구현했습니다. (Todo.js)
+
+22.03.27 - api-config, ApiService를 이용해 fetch를 통해 백엔드 서버에서 API를 호출해 프론트엔드 애플리케이션과 HTTP로 연결시켰다. local 환경에서는 완벽하게 동작하는 애플리케이션을 구현한 셈이다. (api-config.js, ApiService.js, App.js, Todo.js)
