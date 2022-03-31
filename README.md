@@ -52,3 +52,5 @@ Ubuntu 20.04.4 LTS
 22.03.23 - ItemBase의 readOnly props를 변경하고 이벤트 핸들러 함수를 통해 Todo item을 수정하는 함수를 구현했습니다. (Todo.js)
 
 22.03.27 - api-config, ApiService를 이용해 fetch를 통해 백엔드 서버에서 API를 호출해 프론트엔드 애플리케이션과 HTTP로 연결시켰다. local 환경에서는 완벽하게 동작하는 애플리케이션을 구현한 셈이다. (api-config.js, ApiService.js, App.js, Todo.js)
+
+22.03.31 - User 레이어를 구현했다. User persistence, Sevice, Controllder 레이어를 구현하고 데이터 교환에 필요한 Entity, DTO를 구현해 회원 가입, 로그인이 잘 수행됨을 확인했다. (UserControllder.java, UserDTO.java, UserEntity.java, UserRepository.java, UserService.java)
