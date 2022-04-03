@@ -56,3 +56,5 @@ Ubuntu 20.04.4 LTS
 22.03.31 - User 레이어를 구현했다. User persistence, Sevice, Controllder 레이어를 구현하고 데이터 교환에 필요한 Entity, DTO를 구현해 회원 가입, 로그인이 잘 수행됨을 확인했다. (UserControllder.java, UserDTO.java, UserEntity.java, UserRepository.java, UserService.java)
 
 22.04.01 - security 패키지 아래 token을 발행하는 TokenProvider 클래스를 구현했다. 이 클래스는 jjwt 라이브러리를 사용하고, UserEntity를 받아 JWT 토큰을 생성하는 create 메서드, {헤더}.{페이로드}를 서명한 후 token의 서명과 비교하고 유효성 검사를 해서 userId를 리턴하는 validateAndGetUserId 메서드를 제공한다.(UserController.java, TokenProvider.java)
+
+22.04.03 - Spring Security를 통해 서블릿 필터로 JwTAuthenticationFilter(우리가 만든 필터)를 등록합니다. JwT..Filter는 OncePerRequestFilter를 상속해서 요청당 1번만 실행합니다. 요청을 처리하는 과정 중 사용자 인증 여부 등의 정보가 필요하므로, SecurityContext에 사용자를 등록합니다
