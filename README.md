@@ -60,3 +60,5 @@ Ubuntu 20.04.4 LTS
 22.04.03 - Spring Security를 통해 서블릿 필터로 JwTAuthenticationFilter(우리가 만든 필터)를 등록합니다. JwT..Filter는 OncePerRequestFilter를 상속해서 요청당 1번만 실행합니다. 요청을 처리하는 과정 중 사용자 인증 여부 등의 정보가 필요하므로, SecurityContext에 사용자를 등록합니다(JWTAuthenticationFilter.java)
 
 22.04.05 - JwT..Filter를 HttpSecurity 오브젝트를 통해 스프링 시큐리티에 Filter를 설정합니다. HttpSecurity 오브젝트는 cors, csrf, httpBasic, session, authorizeRequests 등을 설정할 수 있습니다. API를 사용할 때 사용자 식별에 필요한 userId를 지정합니다. TodoControllder에 임시 사용자를 @AuthenticationPrincipal 어노테이션을 userId에 지정해 SecurityContextHolder에서 User...Token 오브젝트를 가져옵니다. 이 오브젝트의 AuthenticationPrincipal을 가져와 컨트롤러 메서드로 userId를 넘겨줍니다.(WebSecurityConfig.java, TodoController.java)
+
+22.04.06 - 패스워드 암호화를 위해 BCryptPasswordEncoder를 사용합니다. 이 인코더는 Salting 방식으로 pw를 암호화한다. 기존에 UserService의 getByCredentials 메서드에서 암호를 확인하는 부분을 수정했습니다. (UserService.java, UserController.java)
