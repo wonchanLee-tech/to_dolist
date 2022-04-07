@@ -1,7 +1,7 @@
 import { API_BASE_URL } from "./api-config";
 
 export function call (api, method, request){
-    options = {
+    var options = {
         headers: new Headers({
             "Content-Type": "application/json",
         }),
