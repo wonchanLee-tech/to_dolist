@@ -13,11 +13,18 @@ export function call (api, method, request){
         options.body = JSON.stringify(request);
     }
     return fetch(options.url, options)
-       .then((response) => response.json().then((json) => {
+       .then((response) => {
            if(!response.ok){
                // response.ok가 true이면 정상 응답 아니면 에러 응답
-               return Promise.reject(json);
+               return Promise.reject(response);
            }
-           return json;
-       }));
+           return response;
+       })
+       .catch((error) => {
+           console.log(error.status);
+           if(error.status === 403){
+               window.location.href = "/login"; // redirect
+           }
+           return Promise.reject(error);
+       });
 }

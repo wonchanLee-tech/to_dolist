@@ -62,3 +62,7 @@ Ubuntu 20.04.4 LTS
 22.04.05 - JwT..Filter를 HttpSecurity 오브젝트를 통해 스프링 시큐리티에 Filter를 설정합니다. HttpSecurity 오브젝트는 cors, csrf, httpBasic, session, authorizeRequests 등을 설정할 수 있습니다. API를 사용할 때 사용자 식별에 필요한 userId를 지정합니다. TodoControllder에 임시 사용자를 @AuthenticationPrincipal 어노테이션을 userId에 지정해 SecurityContextHolder에서 User...Token 오브젝트를 가져옵니다. 이 오브젝트의 AuthenticationPrincipal을 가져와 컨트롤러 메서드로 userId를 넘겨줍니다.(WebSecurityConfig.java, TodoController.java)
 
 22.04.06 - 패스워드 암호화를 위해 BCryptPasswordEncoder를 사용합니다. 이 인코더는 Salting 방식으로 pw를 암호화한다. 기존에 UserService의 getByCredentials 메서드에서 암호를 확인하는 부분을 수정했습니다. (UserService.java, UserController.java)
+
+22.04.08 - react-router-dom을 설치한 후 API 콜 부분에서 403 에러가 발생했을 때 /login로 리디렉트하는 코드를 작성했습니다. 또한, AppRouter component를 사용해 Route의 Path를 파싱해 지정된 컴포넌트루 라우팅하는 기능을 구현했습니다.
+
+22.04.09 - 백엔드 애플리케이션 배포를 위해 로컬 환경에 일라스틱 빈스톡 애플리케이션을 초기화했다. 또한, 애플리케이션 프로퍼티를 배포용/개발용으로 나누었고, 콘솔에 앱의 상태를 나타내기 위해 HealthCheck API를 작성했다. (HealthCheckControllet.java)
