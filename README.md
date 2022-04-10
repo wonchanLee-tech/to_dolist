@@ -66,3 +66,5 @@ Ubuntu 20.04.4 LTS
 22.04.08 - react-router-dom을 설치한 후 API 콜 부분에서 403 에러가 발생했을 때 /login로 리디렉트하는 코드를 작성했습니다. 또한, AppRouter component를 사용해 Route의 Path를 파싱해 지정된 컴포넌트루 라우팅하는 기능을 구현했습니다.
 
 22.04.09 - 백엔드 애플리케이션 배포를 위해 로컬 환경에 일라스틱 빈스톡 애플리케이션을 초기화했다. 또한, 애플리케이션 프로퍼티를 배포용/개발용으로 나누었고, 콘솔에 앱의 상태를 나타내기 위해 HealthCheck API를 작성했다. (HealthCheckControllet.java)
+
+22.04.10 - EB CLI를 통해 AWS에 환경을 생성하고, 백엔드 환경이 사용할 application yaml 파일을 지정해주었다. 또한, 프론트엔드 애플리케이션 배포를 위해 일라스틱 빈스톡 애플리케이션을 초기화 및 생성하고, CORS Mapping과 backandHost 주소를 EB에서 할당받은 URL로 교채해주었다. 백엔드/auth/signup 메서드가 잘 작동함을 curl을 통해 확인했다. (application-dev.yaml, application-prod.yaml, WebMvcConfig.java, api-config.js)
