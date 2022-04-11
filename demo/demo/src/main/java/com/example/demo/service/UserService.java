@@ -39,7 +39,7 @@ public class UserService {
         if(originalUser != null &&
            encoder.matches(password, originalUser.getPassword())){
                return originalUser;
-           }
+           }  
         
         return null;
     }
