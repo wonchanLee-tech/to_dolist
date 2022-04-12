@@ -1,3 +1,4 @@
+import { responsiveFontSizes } from "@material-ui/core";
 import { API_BASE_URL } from "./api-config";
 const ACCESS_TOKEN = "ACCESS_TOKEN"
 
@@ -22,14 +23,12 @@ export function call (api, method, request){
         options.body = JSON.stringify(request);
     }
     return fetch(options.url, options)
-        .then((response) =>
-        response.json().then((json) => {
-        if (!response.ok) {
-            // response.ok가 true이면 정상적인 리스폰스를 받은것, 아니면 에러 리스폰스를 받은것.
-            return Promise.reject(json);
-        }
-        return json;
-        }))
+        .then((response) =>{
+          if (!response.ok) {
+            return Promise.reject(response);
+          }
+        return response.json() ;
+        })
        .catch((error) => {
            console.log(error.status);
            if(error.status === 403){
@@ -54,4 +53,8 @@ export function signin(userDTO){
 export function signout(){
     localStorage.setItem(ACCESS_TOKEN, null);
     window.location.href='/login';
+}
+
+export function signup(userDTO){
+    return call("/auth/signup", "POST", userDTO);
 }

@@ -70,3 +70,5 @@ Ubuntu 20.04.4 LTS
 22.04.10 - EB CLI를 통해 AWS에 환경을 생성하고, 백엔드 환경이 사용할 application yaml 파일을 지정해주었다. 또한, 프론트엔드 애플리케이션 배포를 위해 일라스틱 빈스톡 애플리케이션을 초기화 및 생성하고, CORS Mapping과 backandHost 주소를 EB에서 할당받은 URL로 교채해주었다. 백엔드/auth/signup 메서드가 잘 작동함을 curl을 통해 확인했다. (application-dev.yaml, application-prod.yaml, WebMvcConfig.java, api-config.js)
 
 22.04.11 - localStorage를 통해 ACCESS_TOKEN을 저장해서 요청마다 header-Authorization에 첨부해서 로그인을 할 수 있었다. 또한, 로그아웃 기능과 UI 글리치(로딩 페이지)를 해결했다. 그 외에도 API를 call할 때 response를 파싱하는 부분에서 에러를 수정했다.(ApiService.js, App.js, Login.js)
+
+22.04.12 - SignUp 컴포넌트 구현 및 AppRouter에 연결을 했습니다. SingUp의 submit 버튼에 백엔드에 form data(event.target)을 POST로 계정 생성을 요청하는 signup 함수를 연결해서 계정 생성 로직을 구현했습니다.(ApiService.js, AppRouter, Login.js, SignUp.js)
